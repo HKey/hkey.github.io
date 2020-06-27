@@ -1,14 +1,16 @@
+const title = `M-x hkey-diary`
+
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Starter Blog`,
+    title: title,
     author: {
-      name: `Kyle Mathews`,
-      summary: `who lives and works in San Francisco building useful things.`,
+      name: `HKey`,
+      summary: ``,
     },
-    description: `A starter blog demonstrating what Gatsby can do.`,
-    siteUrl: `https://gatsby-starter-blog-demo.netlify.app/`,
+    description: `A blog mainly about emacs.`,
+    siteUrl: `https://hkey.github.io/`,
     social: {
-      twitter: `kylemathews`,
+      twitter: `HKe7`,
     },
   },
   plugins: [
@@ -54,8 +56,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Gatsby Starter Blog`,
-        short_name: `GatsbyJS`,
+        name: title,
+        short_name: title,
         start_url: `/`,
         background_color: `#ffffff`,
         theme_color: `#663399`,
