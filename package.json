@@ -1,11 +1,9 @@
 {
-  "name": "gatsby-starter-blog",
   "private": true,
-  "description": "A starter for a blog powered by Gatsby and Markdown",
-  "version": "0.1.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "description": "HKey's blog",
+  "author": "Hiroki YAMAKAWA <s06139@gmail.com>",
   "bugs": {
-    "url": "https://github.com/gatsbyjs/gatsby/issues"
+    "url": "https://github.com/HKey/hkey.github.io/issues"
   },
   "dependencies": {
     "gatsby": "^2.23.9",
@@ -37,15 +35,13 @@
   "devDependencies": {
     "prettier": "2.0.5"
   },
-  "homepage": "https://github.com/gatsbyjs/gatsby-starter-blog#readme",
-  "keywords": [
-    "gatsby"
-  ],
+  "homepage": "https://hkey.github.io/",
+  "keywords": [],
   "license": "MIT",
   "main": "n/a",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/gatsbyjs/gatsby-starter-blog.git"
+    "url": "git+https://github.com/HKey/hkey.github.io.git"
   },
   "scripts": {
     "build": "gatsby build",
