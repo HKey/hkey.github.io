@@ -30,6 +30,7 @@ const Tags = ({ pageContext, data, location }) => {
               slug={node.fields.slug}
               excerpt={node.excerpt}
               date={node.frontmatter.date}
+              tags={node.frontmatter.tags}
             />
           )
         })}
@@ -85,6 +86,7 @@ export const pageQuery = graphql`
           frontmatter {
             title
             date
+            tags
           }
           excerpt
         }

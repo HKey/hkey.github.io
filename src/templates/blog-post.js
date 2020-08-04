@@ -3,6 +3,7 @@ import { Link, graphql } from "gatsby"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
+import TagList from "../components/taglist"
 import { rhythm, scale } from "../utils/typography"
 
 const BlogPostTemplate = ({ data, pageContext, location }) => {
@@ -34,6 +35,8 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
             }}
           >
             {post.frontmatter.date}
+            {post.frontmatter.tags &&
+             <TagList tags={post.frontmatter.tags} />}
           </p>
         </header>
         <section dangerouslySetInnerHTML={{ __html: post.html }} />
@@ -92,6 +95,7 @@ export const pageQuery = graphql`
       frontmatter {
         title
         date(formatString: "MMMM DD, YYYY")
+        tags
       }
     }
   }

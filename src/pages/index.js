@@ -19,6 +19,7 @@ const BlogIndex = ({ data, location }) => {
             slug={node.fields.slug}
             excerpt={node.excerpt}
             date={node.frontmatter.date}
+            tags={node.frontmatter.tags}
           />
         )
       })}
@@ -45,6 +46,7 @@ export const pageQuery = graphql`
           frontmatter {
             date(formatString: "MMMM DD, YYYY")
             title
+            tags
           }
         }
       }
