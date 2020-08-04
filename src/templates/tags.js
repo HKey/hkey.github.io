@@ -4,7 +4,6 @@ import React from "react"
 // Components
 import { Link, graphql } from "gatsby"
 import Layout from "../components/layout"
-import SEO from "../components/seo"
 import PageLink from "../components/pagelink"
 
 import { rhythm } from "../utils/typography"
@@ -12,15 +11,11 @@ import { rhythm } from "../utils/typography"
 const Tags = ({ pageContext, data, location }) => {
   const { tag } = pageContext
   const siteTitle = data.site.siteMetadata.title
-  const { edges, totalCount } = data.allMarkdownRemark
-  // const tagHeader = `${totalCount} post${
-  //   totalCount === 1 ? "" : "s"
-  // } tagged with "${tag}"`
+  const { edges } = data.allMarkdownRemark
   const tagHeader = `Tagged with "${tag}"`
 
   return (
     <Layout location={location} title={siteTitle}>
-      <SEO title="All posts" />
       <h1
         style={{
           marginTop: rhythm(1),
