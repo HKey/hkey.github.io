@@ -75,7 +75,10 @@ exports.onCreateNode = ({ node, actions, getNode }) => {
   const { createNodeField } = actions
 
   if (node.internal.type === `MarkdownRemark`) {
-    const trailingSlash = false
+    // trailingSlash is needed to let local links in markdown files
+    // work correctly by gatsby-plugin-catch-links.  Of course it is
+    // already true by default.
+    const trailingSlash = true
     const value = `/post` +
           createFilePath({ node, getNode, trailingSlash})
     createNodeField({
