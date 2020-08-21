@@ -12,6 +12,7 @@ const TagList = ({ tags }) => {
   return (
     <ul style={{
       marginBottom: 0,
+      marginLeft: 0,
     }}>
       {tags.map(tag => {
         return (
