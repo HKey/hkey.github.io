@@ -11,6 +11,10 @@ Wordpress2016.overrideThemeStyles = () => {
 
 delete Wordpress2016.googleFonts
 
+// Use sans-serif as default font.
+Wordpress2016.headerFontFamily = ['sans-serif']
+Wordpress2016.bodyFontFamily = ['sans-serif']
+
 const typography = new Typography(Wordpress2016)
 
 // Hot reload typography in development.
